@@ -61,14 +61,18 @@ Remove ENA/ENB jumpers when using PWM speed control.
 
 ## 5. L9110S
 
-| L9110S | Arduino |
+The L9110S module's supply must match the exact module and the brush-motor voltage/current rating. If your chosen brush motors are 5V-rated, use the regulated 5V rail shown below. Do not connect the 7.4V battery directly to the L9110S unless the exact module and motors are rated for it.
+
+| L9110S | Arduino / Power |
 |---|---|
 | A-IA | D3 |
 | A-IB | D4 |
 | B-IA | D7 |
 | B-IB | D12 |
-| VCC | Regulated 5V |
+| VCC | Regulated 5V* |
 | GND | Common GND |
+
+*Use 5V here only with a 5V-compatible L9110S module and brush motors. Check the exact hardware datasheets before powering it.
 
 Motor outputs:
 
