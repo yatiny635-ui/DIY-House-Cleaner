@@ -55,6 +55,8 @@ Battery negative → common ground
 
 The L298N powers the two drive motors.
 
+The L9110S supply must match the particular L9110S module and brush-motor ratings. For the base build documented here, use regulated 5V for the L9110S only when the chosen brush motors are suitable for 5V operation. Do not assume the 7.4V battery can be connected directly to an L9110S module without checking its datasheet.
+
 ### Regulated 5V
 Battery → 5V buck converter → regulated 5V
 
